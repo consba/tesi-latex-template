@@ -12,17 +12,23 @@
       \includegraphics[width=0.641\textwidth]{logo.eps} \\[0.5cm]
 
       {\normalsize{DIPARTIMENTO DI NUOVE TECNOLOGIE E LINGUAGGI MUSICALI}} \\[-0.2cm]
-      {\spacedlowsmallcaps{Scuola di Musica elettronica}} \\[0.5cm]
+      {\spacedlowsmallcaps{Scuola di Musica elettronica}} \\
 
       {\normalsize{DIPLOMA ACCADEMICO DI PRIMO LIVELLO IN}} \\[-0.2cm]
       {\spacedlowsmallcaps{Tecnico del Suono}} \\[1.414cm]
-      %{\spacedlowsmallcaps{Musica Elettronica}} \\[2cm]
+      %{\spacedlowsmallcaps{Musica Elettronica}} \\[1.414cm]
 
-      {\huge{\spacedlowsmallcaps{\myName}}}\vspace{-0.3cm}
+      {\huge{\spacedlowsmallcaps{\myName}}}
+      \vspace{-0.5cm}
       \par\noindent\rule{\textwidth}{0.4pt}\vspace{0.3cm}
-      {\Huge{\color{bbari}\spacedallcaps{\myTitle}}}
+        \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+          \node[bbari] at (0cm,1.45cm) {\Huge{\color{bbari}\spacedallcaps{\myTitle}}};
+          \node[anchor=north] at (0cm,0.4cm) {\spacedlowsmallcaps{\mySubTitle}};
+        \end{tikzpicture}
+
+%{\Huge{\color{bbari}\spacedallcaps{\myTitle}}}
       \par\noindent\rule{\textwidth}{0.4pt}\vspace{0.3cm}
-      {\spacedlowsmallcaps{\mySubTitle}}
+
     }
 
     \vspace{2.718cm}
