@@ -6,6 +6,10 @@
 %*******************************************************
 \begin{titlepage}
 \pdfbookmark{Titlepage}{Titlepage}
+
+\areaset{450pt}{784pt}
+%\areaset[current]{370pt}{784pt}
+
 \changetext{}{}{}{((\paperwidth  - \textwidth) / 2) - \oddsidemargin - \hoffset - 1in}{}
   \begin{center}
     {\LARGE
@@ -14,50 +18,48 @@
       {\normalsize{DIPARTIMENTO DI NUOVE TECNOLOGIE E LINGUAGGI MUSICALI}} \\[-0.2cm]
       {\spacedlowsmallcaps{Scuola di Musica elettronica}} \\
 
-      {\normalsize{DIPLOMA ACCADEMICO DI PRIMO LIVELLO IN}} \\[-0.2cm]
-      {\spacedlowsmallcaps{Tecnico del Suono}} \\[1.414cm]
-      %{\spacedlowsmallcaps{Musica Elettronica}} \\[1.414cm]
+      {\normalsize{DIPLOMA ACCADEMICO DI \myLevel~LIVELLO IN}} \\[-0.2cm]
+      {\spacedlowsmallcaps{\myCourse}} \\[1.414cm]
 
       {\huge{\spacedlowsmallcaps{\myName}}}
       \vspace{-0.5cm}
       \par\noindent\rule{\textwidth}{0.4pt}\vspace{0.3cm}
-        \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
-          \node[bbari] at (0cm,1.45cm) {\Huge{\color{bbari}\spacedallcaps{\myTitle}}};
-          \node[anchor=north] at (0cm,0.4cm) {\spacedlowsmallcaps{\mySubTitle}};
-        \end{tikzpicture}
-
-%{\Huge{\color{bbari}\spacedallcaps{\myTitle}}}
-      \par\noindent\rule{\textwidth}{0.4pt}\vspace{0.3cm}
-
-    }
-
-    \vspace{2.718cm}
+		{\Huge{\color{bbari}\spacedallcaps{\myTitle}}}
+      \par\noindent\rule{\textwidth}{0.4pt}\vspace{0.3cm}}
+        {\Large{\spacedlowsmallcaps{\mySubTitle}}} \\[.2cm]
+%    \vspace{2.718cm}
+	\vfill
+	
+%        \begin{tikzpicture}[remember picture, overlay, shift={(current page.center)}]
+%          \node[bbari] at (0cm,1.45cm) {\Huge{\color{bbari}\spacedallcaps{\myTitle}}};
+%          \node[anchor=north] at (0cm,0.4cm) {\spacedlowsmallcaps{\mySubTitle}};
+%        \end{tikzpicture}
 
     \begin{minipage}[t]{0.49\textwidth}
     \begin{flushleft} \large
     \emph{Autore:}\\
     \spacedlowsmallcaps{\myName}\\
-    \spacedlowsmallcaps{1234/T}
+    \spacedlowsmallcaps{\myMatricola}
     \end{flushleft}
     \end{minipage}
     \begin{minipage}[t]{0.49\textwidth}
     \begin{flushright} \large
     \emph{Relatore:} \\
-    \spacedlowsmallcaps{Prof. Giuseppe Silvi}\\
-    \spacedlowsmallcaps{Elettroacustica}
+    \spacedlowsmallcaps{\myRelator}\\
+    \spacedlowsmallcaps{\myRelCourse}
     \end{flushright}
     \end{minipage}\\[0.5cm]
     \begin{minipage}[t]{0.99\textwidth}
     \begin{flushright} \large
     \emph{Correlatore:} \\
-    \spacedlowsmallcaps{Luigi Nono}\\
-    \spacedlowsmallcaps{Compositore}
+    \spacedlowsmallcaps{\myCorRelator}\\
+    \spacedlowsmallcaps{\myCorRelCourse}
     \end{flushright}
-    \end{minipage}\\[3cm]
+    \end{minipage}\\
 
     \vfill
 
-    ANNO ACCADEMICO 2021/22
+    ANNO ACCADEMICO \myAA
 
   \end{center}
 \end{titlepage}

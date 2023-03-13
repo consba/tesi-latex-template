@@ -1,6 +1,65 @@
 % !TEX TS-program = pdflatex
 % !TEX root = tesi.tex
 
+\documentclass[
+  a4paper,
+  twoside,
+  openright,
+  titlepage,
+  headinclude,
+  footinclude,
+  BCOR5mm,
+  numbers=noenddot,
+  cleardoublepage=empty,
+  tablecaptionabove
+]{scrreprt}
+
+\usepackage[showframe]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,italian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[
+  backend=biber,
+  style=philosophy-modern,
+  hyperref
+]{biblatex}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lipsum}
+\usepackage{shapepar}
+\usepackage{pifont}
+\usepackage[
+  eulerchapternumbers,
+  subfig,
+  beramono,
+  eulermath,
+  pdfspacing,
+  listings
+]{classicthesis}
+\usepackage{arsclassica}
+\usepackage{tikz}
+
+% FONT UTILIZZATO DAL CONSERVATORIO
+\usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+\usepackage{ccicons}
+
+\usepackage{todonotes}
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\onehalfspacing
+
 % ********************************************************************
 % Personal commands
 % ********************************************************************
