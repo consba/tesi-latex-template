@@ -1,0 +1,399 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"small",
+				"\\smallskip                                        "
+			],
+			[
+				"begin",
+				"\\begin{equation}                                  "
+			],
+			[
+				"itemize",
+				"\\begin{itemize}                                   "
+			],
+			[
+				"subse",
+				"\\subsection{title}                                "
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/tesi.tex",
+			"settings":
+			{
+				"buffer_size": 601,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "src/Chapters/Cap1.tex",
+			"settings":
+			{
+				"buffer_size": 16908,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package Control",
+				"Install Package Control"
+			],
+			[
+				"Snippet: ",
+				"Snippet: For Loop"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 131.199996948,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters"
+	],
+	"file_history":
+	[
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/storia.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/arsclassica-settings.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/FrontBackMatter/Titlepage.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/_custom-settings.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/FrontBackMatter/Titleback.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Introduzione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Titlepage.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap4.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap3.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap2.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Titleback.tex",
+		"/C/Users/Sergio/Desktop/Tesi/tesi-latex-template-main/tesi-latex-template-main/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Code.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Bibliography.tex",
+		"/C/Users/Sergio/Desktop/Nuova cartella/Amato-TILE24/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Desktop/Amato-TILE24-main/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-main/src/_custom-settings.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/Chapters/Fundamentals.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/Chapters/Code.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-main/src/tesi.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/tesi.tex",
+		"/C/Users/Sergio/Desktop/test.cpp",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Conclusione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Acknowledgements.tex",
+		"/C/Users/Sergio/Desktop/Cap1.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Conclusione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Introduzione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Fundamentals.tex",
+		"/C/Users/Sergio/AppData/Local/Temp/Rar$DIa21396.42056/ORTF.tex",
+		"/C/Users/Sergio/Desktop/aaa.tex",
+		"/C/Users/Sergio/Desktop/aaa.log",
+		"/C/Users/Sergio/AppData/Local/Programs/MiKTeX/tex/latex/classicthesis/classicthesis.sty",
+		"/C/Users/Sergio/AppData/Roaming/Sublime Text/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Sergio/AppData/Roaming/Sublime Text/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Sergio/Documents/new.cpp",
+		"/C/Users/Sergio/Downloads/Telegram Desktop/The Binding of Isaac Rebirth Repentance/resources/packed/graphics.a",
+		"/C/Users/Sergio/Desktop/Pokemon Theta Emerald Renev v2.3/Pokemon Theta Emerald RENEV.docx",
+		"/C/Users/Sergio/Desktop/AME/AME/20180605 Analisi/20220516 Analizzare un brano.docx",
+		"/C/Users/Sergio/Downloads/Pokemon Theta Emerald Renev v2.3/Pokemon Theta Emerald RENEV.docx"
+	],
+	"find":
+	{
+		"height": 55.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 135.600006104,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/tesi.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Chapters/Cap1.tex",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 16908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.4
+	},
+	"input":
+	{
+		"height": 50.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 274.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 81.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "testi24.sublime-project",
+	"replace":
+	{
+		"height": 49.6
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
