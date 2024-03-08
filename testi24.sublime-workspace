@@ -23,26 +23,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/tesi.tex",
-			"settings":
-			{
-				"buffer_size": 601,
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
-			"file": "src/Chapters/Cap1.tex",
-			"settings":
-			{
-				"buffer_size": 16908,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -157,13 +137,15 @@
 	"expanded_folders":
 	[
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24",
-		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src",
-		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters"
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src"
 	],
 	"file_history":
 	[
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/storia.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/Introduzione.tex",
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Bibliography.bib",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/Cap1r.tex",
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/arsclassica-settings.tex",
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/FrontBackMatter/Titlepage.tex",
 		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/_custom-settings.tex",
@@ -242,67 +224,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/tesi.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								269,
-								269
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/Chapters/Cap1.tex",
-					"selected": true,
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 16908,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"tab_size": 6,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
