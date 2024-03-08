@@ -6,17 +6,19 @@
 \label{chp:Implementazione}
 %************************************************
 
+\input{Chapters/201-filtri.tex}
+
 In questo capitolo sarà presente l’analisi degli algoritmi che compongono il sistema riverberante creato. Gli algoritmi sono stati scritti nel linguaggio Faust sulla base delle ricerche svolte da Schroeder e Moorer e presentano le dovute modifiche che rispecchiano l’idea iniziale, vale a dire utilizzando parametri quali temperatura, pressione e tipologia del gas per variare la risposta del riverbero.
 
 \section{Algoritmi di Schroeder}
 
-I primi algoritmi sono stati creati partendo dalle soluzioni ottenute da Schroeder e utilizzati a scopo di test. L’obiettivo è stato quello di ricreare passo dopo passo le unità descritte nell’articolo Natural Sounding Artificial Reverberation. 
+I primi algoritmi sono stati creati partendo dalle soluzioni ottenute da Schroeder e utilizzati a scopo di test. L’obiettivo è stato quello di ricreare passo dopo passo le unità descritte nell’articolo Natural Sounding Artificial Reverberation.
 
 \subsection{Algoritmi fondamentali}
 
 Partendo quindi dagli elementi fondamentali, abbiamo, come primo sistema il filtro Comb descritto in \ref{fig:dfl}.
 \begin{code}
-dfld(t, g) = ( + : de.delay(ma.SR,t-1))~(*(g)) : mem; //delay feed loop 
+dfld(t, g) = ( + : de.delay(ma.SR,t-1))~(*(g)) : mem; //delay feed loop
 process = os.impulse : dfld(1000,.707);
 \end{code}
 
@@ -55,7 +57,7 @@ Il diagramma di questo codice è in figura \ref{fig:apfaust}.
 
 \subsection{Algoritmi derivati}
 
-I prossimi algoritmi sono i successivi descritti da Schroeder. Presentano una serie di miglioramenti che auspicano ad una maggior naturalezza nella risposta del filtro. 
+I prossimi algoritmi sono i successivi descritti da Schroeder. Presentano una serie di miglioramenti che auspicano ad una maggior naturalezza nella risposta del filtro.
 Come abbiamo visto in figura \ref{fig:apfmix}, creiamo un All Pass contenente un secondo All Pass e un delay al suo interno, per simulare il ritardo che intercorre tra il suono diretto e il suono riverberato.
 
 \smallskip
@@ -120,12 +122,12 @@ Il secondo algoritmo, per la configurazione `'Comb-All Pass'' vista in figura \r
 
 \begin{code}
 reva((t,g,t1,g1),g2) = _<:_+(
-    par(i,6, dflda(ba.take(i+1, t),G*ba.take(i+1,g))) :> 
+    par(i,6, dflda(ba.take(i+1, t),G*ba.take(i+1,g))) :>
     seq(i, 2, apfn(ba.take(4-i, t1),G*ba.take(i+1,g1))))*(g2);
 process = _ : reva((primetc1,combg1,primetc2,combg2),G);
 \end{code}
 
-`'par'' e `'rev'' sono rispettivamente, composizione parallela e composizione sequenziale e ci permettono di creare una cascata di 6 Comb seguita da una sequenza di 2 All Pass. 
+`'par'' e `'rev'' sono rispettivamente, composizione parallela e composizione sequenziale e ci permettono di creare una cascata di 6 Comb seguita da una sequenza di 2 All Pass.
 
 Il risultato è in figura \ref{fig:comballpassfaust}.
 
@@ -141,7 +143,7 @@ Quest'algoritmo risulta essere il più efficente ad ora e permette la riproduzio
 
 \section{Algoritmi di Moorer}
 
-In seguito alla fase di test, il passo successivo è stato quello di implementare gli algoritmi di Moorer, in quanto risultano più efficenti dei precedenti. 
+In seguito alla fase di test, il passo successivo è stato quello di implementare gli algoritmi di Moorer, in quanto risultano più efficenti dei precedenti.
 In questa sezione verranno inoltre inseriti i parametri ambientali ed utilizzati come controllo delle caratteristiche del riverbero. Le formule utilizzate per il calclo dei parametri sono le medesime viste nel capitolo \ref{chp:Filtri} ma con le dovute approssimazioni.
 
 \bigskip

@@ -15,12 +15,17 @@
 \input{FrontBackMatter/Contents}
 \cleardoublepage
 \pagenumbering{arabic}
-\input{Chapters/Introduzione}
-\input{Chapters/storia}
-\input{Chapters/Cap2}
-%\input{Chapters/Cap3}
-\input{Chapters/Cap4}
-\input{Chapters/Conclusione}
 \clearpage
+\listoftodos
+\clearpage
+\input{Chapters/000-introduzione}
+\input{Chapters/100-storia}
+\input{Chapters/200-implementazione}
+%\input{Chapters/Cap3}
+%\input{Chapters/Cap4}
+\input{Chapters/Conclusioni}
+\clearpage
+\addcontentsline{toc}{chapter}{Indice dei nomi}
+\printindex[names]
 \input{FrontBackMatter/Bibliography}
 \end{document}

@@ -1,66 +1,80 @@
-% !TEX TS-program = pdflatex
-% !TEX root = ../tesi.tex
+% % !TEX TS-program = pdflatex
+% % !TEX root = ../tesi.tex
+%
+% %************************************************
+% \chapter{Acustica}
+% \label{chp:Acustica}
+% %************************************************
+%
+% Questo capitolo affronta il processo della produzione, dispersione e percezione dell'onda sonora. Il campo della scienza che si occupa degli studi relativi alla fisica del suono si chiama \emph{acustica}, i cui primi passi sono stati mossi già dai primi \textit{pitagorici} portando innovazione ancora oggi. Di studi più recenti sulla percezione dell'evento sonoro da parte dell'uomo se ne occupa invece la \textit{psicoacustica}.
+%
+% \section{Il Suono}
+%
+% Per sintetizzare un riverberatore è necessario prima comprendere, dal punto di vista fisico, cosa accade nel momento in cui un suono viene generato e del suo comportamento nello spazio circostante.
+%
+% Per \textbf{\textit{suono}} intendiamo un'alterazione di pressione, velocità e posizione delle particelle, propagata in un mezzo elastico, o la sovrapposizione di tali alterazioni.
+% Parlando di suono ci riferiamo anche alla percezione definita dal nostro sistema uditivo delle alterazioni sopracitate (H. F. Olson - Elements of acoustical engineering - 1957 pag2).
+%
+% Il suono è prodotto quando il mezzo di propagazione (nella maggior parte dei casi l'aria)
+% è messo in vibrazione da un qualsiasi evento di natura meccanica, per esempio, l'oscillazione di una corda o il battere di un oggetto su una superficie solida  (Harry f.olson - Elements of acoustical engineering - 1957 pag 2).
+%
+% Queste vibrazioni, propagate in modo sferico, raggiungono il nostro orecchio avente la funzione di trasduttore (trasforma l'energia cinetica in impulsi elettrici) risultando nella nostra percezione dell'evento sonoro.
+%
+% \subsection{Caratteristiche}
+% Le caratteristiche principali, sempre dal punto di vista fisico del suono percepito sono dunque:
+% \begin{itemize}
+%       \item \emph{Periodo}:
+%       Il tempo di completamento di un ciclo (ovvero quando, un segnale periodico esprime tutti i suoi valori ricorrenti) espresso in secondi
+%       \item \emph{Frequenza}:
+%       il numero di cicli in 1 secondo, si esprime in hertz
+%       \item \emph{Lunghezza d'onda}:
+%       la distanza tra 2 massimi consecutivi, si esprime in metri
+%       \item \emph{Ampiezza}:
+%       massima escursione dal punto di equilibrio
+%       \item \emph{Velocità dell'onda}:
+%       velocità di movimento del fronte d'onda nel mezzo, si esprime in metri al secondo.
+% \end{itemize}
+% (D. Davis - Sound System Engineering - 2013 pag 171)
+% \bigskip
+%
+% Ovviamente queste caratteristiche non sono universali ma dipendono da fattori ambientali che ne definiscono i valori. Due eventi sonori, di partenza identici, non verranno percepiti ugualmente al variare delle condizioni esterne.
+% Queste condizioni che influiscono sul suono sono:
 
-%************************************************
-\chapter{Acustica}
-\label{chp:Acustica}
-%************************************************
+\section{Acustici Luoghi Comuni}
 
-Questo capitolo affronta il processo della produzione, dispersione e percezione dell'onda sonora. Il campo della scienza che si occupa degli studi relativi alla fisica del suono si chiama \emph{acustica}, i cui primi passi sono stati mossi già dai primi \textit{pitagorici} portando innovazione ancora oggi. Di studi più recenti sulla percezione dell'evento sonoro da parte dell'uomo se ne occupa invece la \textit{psicoacustica}.  
+\todo[inline]{in questa sezione\ldots bla bla bla}
 
-\section{Il Suono}
+\subsection{Distanza dalla sorgente}
 
-Per sintetizzare un riverberatore è necessario prima comprendere, dal punto di vista fisico, cosa accade nel momento in cui un suono viene generato e del suo comportamento nello spazio circostante.
+La distanza dalla sorgente sonora è risaputo comportare una diminuzione di
+intensità. Dato che l’onda si propaga in modo sferico, segue la legge
+dell’inverso del quadrato, comportando una diminuzione di 6 db ad ogni raddoppio
+della distanza.
 
-Per \textbf{\textit{suono}} intendiamo un'alterazione di pressione, velocità e posizione delle particelle, propagata in un mezzo elastico, o la sovrapposizione di tali alterazioni.
-Parlando di suono ci riferiamo anche alla percezione definita dal nostro sistema uditivo delle alterazioni sopracitate (H. F. Olson - Elements of acoustical engineering - 1957 pag2).
+\subsection{Conformazione del gas/Temperatura e densità}
 
-Il suono è prodotto quando il mezzo di propagazione (nella maggior parte dei casi l'aria)
-è messo in vibrazione da un qualsiasi evento di natura meccanica, per esempio, l'oscillazione di una corda o il battere di un oggetto su una superficie solida  (Harry f.olson - Elements of acoustical engineering - 1957 pag 2).
-
-Queste vibrazioni, propagate in modo sferico, raggiungono il nostro orecchio avente la funzione di trasduttore (trasforma l'energia cinetica in impulsi elettrici) risultando nella nostra percezione dell'evento sonoro.
-
-\subsection{Caratteristiche}
-Le caratteristiche principali, sempre dal punto di vista fisico del suono percepito sono dunque:
-\begin{itemize}
-      \item \emph{Periodo}: 
-      Il tempo di completamento di un ciclo (ovvero quando, un segnale periodico esprime tutti i suoi valori ricorrenti) espresso in secondi
-      \item \emph{Frequenza}:
-      il numero di cicli in 1 secondo, si esprime in hertz
-      \item \emph{Lunghezza d'onda}:
-      la distanza tra 2 massimi consecutivi, si esprime in metri
-      \item \emph{Ampiezza}: 
-      massima escursione dal punto di equilibrio
-      \item \emph{Velocità dell'onda}: 
-      velocità di movimento del fronte d'onda nel mezzo, si esprime in metri al secondo.
-\end{itemize}
-(D. Davis - Sound System Engineering - 2013 pag 171)
-\bigskip
-
-Ovviamente queste caratteristiche non sono universali ma dipendono da fattori ambientali che ne definiscono i valori. Due eventi sonori, di partenza identici, non verranno percepiti ugualmente al variare delle condizioni esterne.
-Queste condizioni che influiscono sul suono sono:
-
-\subsubsection{Distanza dalla sorgente}
-
-La distanza dalla sorgente sonora è risaputo comportare una diminuzione di intensità. Dato che l’onda si propaga in modo sferico, segue la legge dell’inverso del quadrato, comportando una diminuzione di 6 db ad ogni raddoppio della distanza.
-
-\subsubsection{Conformazione del gas/Temperatura e densità}
-
-Parlare di temperatura è importante in quanto è un fattore che influisce in diversi altri fattori presi in esame in questa tesi, ed è inoltre il punto di partenza della mia ricerca.
-Dalla temperatura dipendono infatti la velocità del suono nel mezzo e il valore di assorbimento atmosferico.
+Parlare di temperatura è importante in quanto è un fattore che influisce in
+diversi altri fattori presi in esame in questa tesi, ed è inoltre il punto di
+partenza della mia ricerca.
+Dalla temperatura dipendono infatti la velocità del suono nel mezzo e il valore
+di assorbimento atmosferico.
 La velocità del suono possiamo calcolarla secondo la seguente formula:
+
 \begin{equation}
 C=\sqrt{\frac{\gamma Ps}{\rho}}
 \end{equation}
 dove
 
 \begin{itemize}
-      \item $\gamma$ è il coefficiente di dilatazione adiabatica 
+      \item $\gamma$ è il coefficiente di dilatazione adiabatica
       \item $Ps$ è la pressione circostante
       \item $\rho$ è la densità del gas
 \end{itemize}
 
-La densità del gas, come per il coefficiente di dilatazione adiabatica, varia a seconda della temperatura che, data la sua presenza in varie equazioni, diviene un fattore determinante per la velocità del suono e dunque per le caratteristiche del riverbero.
+La densità del gas, come per il coefficiente di dilatazione adiabatica, varia a
+seconda della temperatura che, data la sua presenza in varie equazioni, diviene
+un fattore determinante per la velocità del suono e dunque per le
+caratteristiche del riverbero.
 Possiamo calcolare la densità tramite la seguente formula (pag 173):
 \begin{equation}
 \rho = \frac{stp*hg}{1+(t*hg*0.00367)}
@@ -102,7 +116,10 @@ Water Vapour & $H_2O$ & 0.804 \\
 \smallskip
 
 \subsubsection{Assorbimento atmosferico}
-Rappresenta l’effetto di dissipazione dell’energia data dall’azione combinata di viscosità e calore del mezzo. Perdite di energia aggiuntive sono dovute all’umidità assoluta. Questo effetto comporta inoltre un aumento dell’attenuazione con l’aumento delle frequenze.
+Rappresenta l’effetto di dissipazione dell’energia data dall’azione combinata
+di viscosità e calore del mezzo. Perdite di energia aggiuntive sono dovute
+all’umidità assoluta. Questo effetto comporta inoltre un aumento
+dell’attenuazione con l’aumento delle frequenze.
 \begin{figure}[h]
 \centering
 \includegraphics[width=%
@@ -112,18 +129,23 @@ Rappresenta l’effetto di dissipazione dell’energia data dall’azione combin
 \end{figure}
 
 \subsubsection{Umidità}
-Il livello di umidità del gas si riferisce alla presenza o meno di molecole d’acqua nel mezzo. La sua influenza non è tanto impattante per quanto riguarda la velocità dell’onda, ma sull’assorbimento acustico totale comportando un abbattimento di intensità a diverse frequenze.
+Il livello di umidità del gas si riferisce alla presenza o meno di molecole
+d’acqua nel mezzo. La sua influenza non è tanto impattante per quanto riguarda
+la velocità dell’onda, ma sull’assorbimento acustico totale comportando un
+abbattimento di intensità a diverse frequenze.
 
 \subsubsection{Fenomeni di Riflessione}
 
 Le riflessioni sono alla base di ciò che chiamiamo riverbero.
-Consistono nella riflessione di un’onda sonora sulle diverse superfici che 
+Consistono nella riflessione di un’onda sonora sulle diverse superfici che
 circondano l’evento acustico, esse siano pareti oppure oggetti che si interpongono
 nella propagazione dell’onda.
 
-Affinché ci sia una riflessione, la superficie riflettente deve necessariamente essere
+Affinché ci sia una riflessione, la superficie riflettente deve necessariamente
+essere
 più larga di almeno $\frac{1}{4}$ della lunghezza d’onda.
-Quando l’oggetto è più piccolo di questa soglia si ha una diffrazione, ovvero l’onda sonora curva attorno ad esso.
+Quando l’oggetto è più piccolo di questa soglia si ha una diffrazione, ovvero
+l’onda sonora curva attorno ad esso.
 
 Un altro fenomeno, che possiamo considerare inverso alla riflessione, è \emph{l’assorbimento}.
 L’assorbimento è dovuto alle proprietà del materiale che, appunto, al posto di riflettere l’onda assorbono parte dell’energia, trattenendola e restituendo un’onda smorzata.
@@ -182,7 +204,7 @@ Caratteristiche di questo tipo possiamo trovarle in luoghi come camere vuote o c
 È il tipo di spazio più comune che possiamo incontrare, nel quale l’energia è sia assorbita che riflessa. L’energia si muove in più direzioni ma è comunque percepibile il punto di origine della fonte di generazione dell’evento sonoro.
 \end{itemize}
 \subsection{Risposta all'impulso}
-Al giorno d’oggi conosciamo una tecnica in grado di eseguire una fotografia delle caratteristiche acustiche in grado di descrivere come il suono si propaga da un punto di emissione ad un ricevitore. 
+Al giorno d’oggi conosciamo una tecnica in grado di eseguire una fotografia delle caratteristiche acustiche in grado di descrivere come il suono si propaga da un punto di emissione ad un ricevitore.
 
 Parliamo di \textit{Risposta all’impulso} ovvero del modello fisico-matematico di un sistema lineare, non dipendente dal tempo, composto solo da un input ed un output (A.Farina - ROOM IMPULSE RESPONSES AS TEMPORAL AND SPATIAL FILTERS - 2006).
 
