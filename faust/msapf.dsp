@@ -1,4 +1,6 @@
 import("stdfaust.lib");
 // SCHROEDER DFL (DELAY VARIABILE)
 dfld(t,g) = ( + : de.delay(ma.SR,t-1))~*(g) : mem;
-process = os.impulse : dfld(1,1/sqrt(2));
+// SCHROEDER ALL-PASS
+apf(t,g) = _ <: *(-g) + (dfld(t,g)*(1-g^2));
+process = os.impulse : apf(1,1/sqrt(2));

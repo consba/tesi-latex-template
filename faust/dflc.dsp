@@ -1,4 +1,4 @@
-//FILTRO COMB
 import("stdfaust.lib");
-dflc(t, g)= +@(t-1)~*(g) : mem;
-process =  dflc(1,0);
+// SCHROEDER DFL
+dfl(t,g) = +@(t-1)~*(g) : mem;
+process = os.impulse : dfl(1,1/sqrt(2));
