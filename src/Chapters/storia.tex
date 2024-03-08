@@ -23,7 +23,7 @@ Di questa categoria citiamo:
 
 \begin{itemize}
 \item Riverberi Elettromeccanici: Questa tipologia di riverbero utilizza un elemento riverberante all’interno del proprio circuito. Due esempi degni di nota sono gli \emph{“spring reverb” e “plate reverb”} che, come suggerisce il nome, utilizzano molle, nel primo caso e placche metalliche, nel secondo, per simulare l’effetto del riverbero sul segnale originale. In poche parole l’elemento riverberante fungeva da ponte tra l’entrata e l’uscita del sistema, modificando le proprietà acustiche del segnale in input.
-\item Camere riverberanti: Questa tipologia si serve di uno spazio realmente esistente al cui interno è presente un diffusore ed un microfono. Il segnale originale viene emesso dall’altoparlante che, diffondendosi nello spazio circostante, acquisisce un riverbero non presente all’origine. Il risultato viene poi successivamente registrato dal microfono, conservando le nuove proprietà. 
+\item Camere riverberanti: Questa tipologia si serve di uno spazio realmente esistente al cui interno è presente un diffusore ed un microfono. Il segnale originale viene emesso dall’altoparlante che, diffondendosi nello spazio circostante, acquisisce un riverbero non presente all’origine. Il risultato viene poi successivamente registrato dal microfono, conservando le nuove proprietà.
 \end{itemize}
 
 Per quanto riguarda le tecniche di \emph{riverberazione digitale}, parliamo di processi in cui il segnale originale, digitalizzato, subisce modifiche tramite calcoli matematici. La tecnica più diffusa è quella del riverbero algoritmico che prevede una serie di \textit{somme, prodotti e delay}. Successivamente parleremo in modo più dettagliato di questa tecnica.
@@ -48,7 +48,7 @@ Gli studi condotti, ponendo questi come gli obiettivi da raggiungere, hanno risc
 
 In generale gli esperimenti si concentrano sulla durata del decadimento del suono riverberato e dell’influenza che hanno pareti e corpi all’interno della stanza sull’assorbimento dell’energia generale.
 
-Il culmine di questo studio, oltre a dimostrare che esiste una correlazione tra la quantità di superficie assorbente (pareti, sedute, persone) e la qualità di percepimento del suono in una stanza, è lo sviluppo di una formula in grado di ricavare il tempo in cui il suono decade fino ad una situazione di equilibrio. 
+Il culmine di questo studio, oltre a dimostrare che esiste una correlazione tra la quantità di superficie assorbente (pareti, sedute, persone) e la qualità di percepimento del suono in una stanza, è lo sviluppo di una formula in grado di ricavare il tempo in cui il suono decade fino ad una situazione di equilibrio.
 Parliamo di \emph{RT60} ovvero il tempo in cui il suono (riverberato) decade di 60 dB.
 
 \begin{equation}
@@ -70,11 +70,11 @@ L’articolo è considerato un capolavoro di acustica applicata e ha avuto una g
 
 La base da cui partiamo per la realizzazione del riverbero algoritmico sono gli studi fatti da Manfred R. Schroeder riportati nel suo articolo “Natural Sounding Artificial Reverberation” pubblicato nel 1962 in seguito agli esperimenti condotti a Murray Hill, presso i Bell Laboratories.
 
-Manfred Robert Schroeder è stato un fisico tedesco conosciuto per i suoi studi su acustica, telecomunicazioni e computer grafica. Nasce nel 1926, ad Ahlen in Germania e già da giovane mostra interesse nell’elettronica e nelle telecomunicazioni. Dopo un periodo di interruzione dallo studio a causa del suo reclutamento durante la Seconda Guerra mondiale, Manfred conclude i suoi studi sotto la tutela del prof Erwin Meyer, un’ autoritá nel mondo dell’acustica. 
+Manfred Robert Schroeder è stato un fisico tedesco conosciuto per i suoi studi su acustica, telecomunicazioni e computer grafica. Nasce nel 1926, ad Ahlen in Germania e già da giovane mostra interesse nell’elettronica e nelle telecomunicazioni. Dopo un periodo di interruzione dallo studio a causa del suo reclutamento durante la Seconda Guerra mondiale, Manfred conclude i suoi studi sotto la tutela del prof Erwin Meyer, un’ autoritá nel mondo dell’acustica.
 In seguito alla sua laurea, il suo lavoro è stato lodato dall’amministrazione dei Bell Laboratories, i quali gli hanno offerto un impiego nella divisione di ricerca a Murray Hill, New Jersey. Da lì in poi ha proseguito le sue ricerche spaziando dalle telecomunicazioni all’acustica conseguendo numerosi riconoscimenti in tutto il mondo.
 
 Il sopracitato laboratorio Bell Labs è inoltre importante da citare in quanto, oltre ad essere un’ istituzione nel campo delle telecomunicazioni, è un eccezionale esempio di collaborazione e progresso. Il laboratorio era un apparato di Bell System, una società telefonica che ha operato in America fornendo servizi a livello nazionale. Lo scopo del laboratorio, dunque, era quello di fornire nuove tecnologie all’avanguardia nel campo delle telecomunicazioni. Da ciò si può facilmente intuire innanzitutto il grande capitale e le tecnologie messe a disposizione dei ricercatori, tra cui Schroeder, e dell’ambiente ricco di menti portate all’innovazione tecnologica.
- 
+
 \subsection{Analisi dell'articolo}
 
 Come detto, partiró dall’analisi fatta da Schroeder per la progettazione del riverbero.
@@ -99,8 +99,8 @@ Utilizzando lo schema proposto da schroeder, abbiamo un dispositivo (informatico
 \label{fig:dfl}
 \end{figure}
 
-Dato che l'obiettivo è quello di produrre un elevato numero di echi a partire da un numero contenuto di oggetti, inseriamo dunque la linea di ritardo in un feedback avente come moltiplicatore $(g) < 1$. 
-Il risultato sarà un segnale che decade di $g$ volte ad ogni ciclo. 
+Dato che l'obiettivo è quello di produrre un elevato numero di echi a partire da un numero contenuto di oggetti, inseriamo dunque la linea di ritardo in un feedback avente come moltiplicatore $(g) < 1$.
+Il risultato sarà un segnale che decade di $g$ volte ad ogni ciclo.
 
 \begin{figure}[htp]
 \centering
@@ -244,7 +244,7 @@ Le problematiche riscontrate possono essere riassunte in:
 \item riverberazione con un carattere metallico, soprattutto per tempi molto lunghi;
 \end{itemize}
 
-A questo punto l’autore considera l’utilizzo di nuove unità riverberanti, ma comunque mantenendo la struttura Comb-All Pass, ritenuta la migliore in termini di risposta. 
+A questo punto l’autore considera l’utilizzo di nuove unità riverberanti, ma comunque mantenendo la struttura Comb-All Pass, ritenuta la migliore in termini di risposta.
 
 \subsection{Nuove unità riverberanti}
 
