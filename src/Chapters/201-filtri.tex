@@ -1,22 +1,20 @@
-% !TEX TS-program = pdflatex
-% !TEX root = ../tesi.tex
-
-%************************************************
-\chapter{Filtri}
-\label{chp:Filtri}
-%************************************************
-
-Questo capitolo affronta l'ampio mondo dei filtri, a quale scopo li utilizziamo, i loro comportamenti e architetture, ponendo uno sguardo all'utilizzo dei ritardi nel loro design.
+% % !TEX TS-program = pdflatex
+% % !TEX root = ../tesi.tex
+%
+% %************************************************
+% \chapter{Filtri}
+% \label{chp:Filtri}
+% %************************************************
 
 \section{Filtri}
 Prima di proseguire con l’analisi del riverberatore, c’è bisogno di introdurre il concetto di filtro, oggetto essenziale  per la creazione di quest’ultimo.
-Un filtro possiamo definirlo come un dispositivo o rete di dispositivi in grado di separare segnali complessi in base alla loro frequenza. Un filtro, come suggerisce il nome, filtra e permette ad alcune bande di frequenze di essere successivamente emesse oppure escluse dall’output finale. 
+Un filtro possiamo definirlo come un dispositivo o rete di dispositivi in grado di separare segnali complessi in base alla loro frequenza. Un filtro, come suggerisce il nome, filtra e permette ad alcune bande di frequenze di essere successivamente emesse oppure escluse dall’output finale.
 Alcune caratteristiche presenti nella maggior parte dei filtri sono:
 \begin{itemize}
 \item Banda Passante:
 Banda di frequenze che passa attraverso un filtro e che subisce una perdita di meno di 3 dB;
 \item Banda Stoppata:
-Banda di frequenze che passa attraverso un filtro e che subisce una perdita di 3 db o più; 
+Banda di frequenze che passa attraverso un filtro e che subisce una perdita di 3 db o più;
 \item Frequenza di Taglio
 È la frequenza dove il filtro inizia ad eseguire modifiche al segnale, come abbattimenti o enfatizzazioni;
 \item Ordine:
@@ -38,7 +36,7 @@ Parliamo di \textbf{equalizzatore} per identificare un dispositivo il cui scopo 
 
 \section{Funzione di trasferimento}
 Prima di proseguire è necessario affrontare in questa sezione un concetto matematico che negli anni ha contribuito allo studio e alla creazione di filtri digitali grazie alla sua estrema versatilità, ovvero le funzioni di trasferimento.
- 
+
 In breve, una funzione di trasferimento è la trasformata della risposta all’impulso di un sistema LTI (Linear Time-Invariant) e riassume in sé le sue caratteristiche.
 
 Si presenta nella seguente forma:
@@ -52,7 +50,7 @@ La forma fattorizzata della funzione di trasferimento è la seguente ed è utili
 \begin{equation}
 H(s)=\frac{\prod_{k=1}^k (s+zk)}{\prod_{n=1}^n (s+pn)}
 \end{equation}
-\bigskip 
+\bigskip
 Semplificando il tutto e ricollegandoci all’argomento principale, è necessario comprendere che poli e zeri corrispondono alla frequenza di taglio del filtro che la funzione di trasferimento rappresenta.
 \section{Tipologie di filtro}
 Come detto in precedenza, i filtri si distinguono per via della loro architettura alla quale consegue un diverso comportamento. Ecco alcune tipologie di filtro, tra le più comuni:
@@ -118,7 +116,7 @@ Ovviamente tutto ciò che abbiamo visto fino a questo punto è puramente nel dom
 \end{itemize}
 Possiamo definire i filtri IIR come caratterizzati da una risposta all’impulso unitario non limitata (parlando di numero di campioni) e un’ampiezza tendente a zero.
 Questo rende i filtri IIR molto simili alla loro controparte analogica (esistente nel tempo continuo).
-Per quanto riguarda la loro composizione strutturale, notiamo generalmente una funzione di trasferimento costituita da un rapporto polinomiale, con poli e zeri. È esclusa una situazione in cui siano presenti soli zeri. Inoltre la costruzione di questi filtri prevede l’utilizzo di sistemi di feedback, e per questo, è risaputo che queste strutture hanno un comportamento instabile. 
+Per quanto riguarda la loro composizione strutturale, notiamo generalmente una funzione di trasferimento costituita da un rapporto polinomiale, con poli e zeri. È esclusa una situazione in cui siano presenti soli zeri. Inoltre la costruzione di questi filtri prevede l’utilizzo di sistemi di feedback, e per questo, è risaputo che queste strutture hanno un comportamento instabile.
 
 Parlando di filtri FIR, invece, possiamo affermare che la loro risposta all’impulso unitario è composta da un numero finito di campioni e per questo non associabili a nessun modello analogico.
 A differenza dei filtri IIR, i filtri FIR, presentano una funzione di trasferimento a soli zeri.
@@ -130,7 +128,7 @@ Il \emph{Delay} è il ritardo temporale imposto ad un evento sonoro. Il Delay pu
 Questo fenomeno si manifesta in due situazioni: quando, in un ambiente riverberante il suono diretto raggiunge l’ascoltatore prima delle sue riflessioni, oppure quando, un delay elettrico, è volontariamente inserito per pareggiare due sorgenti sonore e simulare un’ unica provenienza.
 
 Il delay è inoltre un componente chiave nella costruzione dei filtri digitali.
-Nel dominio digitale, infatti, i singoli campioni di una sequenza vengono sottoposti a numerose operazioni (implicando un processo di quantizzazione) producendo una seconda sequenza di risultati che comporranno il segnale filtrato. 
+Nel dominio digitale, infatti, i singoli campioni di una sequenza vengono sottoposti a numerose operazioni (implicando un processo di quantizzazione) producendo una seconda sequenza di risultati che comporranno il segnale filtrato.
 Le operazioni utilizzate sono: Somma, Prodotto e Delay (di un campione).
 L’espressione che determina il comportamento del filtro è detta equazione differenza e, in base al numero di elementi di ritardo presenti, possiamo indicare l’ordine dell’equazione.
 

@@ -55,9 +55,14 @@
 
 \usepackage{ccicons}
 
+\usepackage{paralist}
+
+\usepackage{imakeidx}
+\makeindex[name=names, title=Indice dei nomi]
+
 \usepackage{todonotes}
 \usepackage{setspace}
-% Using \doublespacing in the preamble 
+% Using \doublespacing in the preamble
 % changes text to double line spacing
 \onehalfspacing
 
@@ -129,6 +134,7 @@
 % Bibliography
 % ********************************************************************
 \addbibresource{Bibliography.bib}
+\addbibresource{gsriverberi.bib}
 
 \defbibheading{bibliography}{%
 \cleardoublepage
@@ -139,3 +145,5 @@
 {\spacedlowsmallcaps{\bibname}}}}
 
 \renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\input{gsnomi.tex}
