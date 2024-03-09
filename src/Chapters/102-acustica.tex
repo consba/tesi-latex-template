@@ -42,7 +42,12 @@
 
 \section{Acustici Luoghi Comuni}
 
-\todo[inline]{in questa sezione\ldots bla bla bla}
+In questa sezione saranno esposti, in maniera più o meno breve, i principi di carattere fisico e 
+percettivo che verranno utilizzati nell'implementazione finale.
+Il campo della scienza che si occupa degli studi relativi alla fisica del suono si 
+chiama \emph{acustica}, i cui primi passi sono stati mossi già dai primi \textit{pitagorici} 
+portando innovazione ancora oggi. Di studi più recenti sulla percezione dell'evento sonoro 
+da parte dell'uomo se ne occupa invece la \textit{psicoacustica}.
 
 \subsection{Distanza dalla sorgente}
 
@@ -191,6 +196,7 @@ Per questo, in modo tale da replicare distanza e vicinanza dalla fonte sonora, o
 In un ambiente reale infatti, è proprio il rapporto tra le due sorgenti a determinare dove e quanto è distante un evento sonoro.
 
 \section{Spazio}
+
 Come citato poc'anzi quando si parla di suono bisogna considerare quindi lo spazio e il mezzo in cui l'onda si propaga.
 Possiamo classificare gli spazi in diverse categorie, le principali sono (Davis - Pag 178):
 \begin{itemize}
@@ -203,10 +209,12 @@ Caratteristiche di questo tipo possiamo trovarle in luoghi come camere vuote o c
 \item Semireverberant Field:
 È il tipo di spazio più comune che possiamo incontrare, nel quale l’energia è sia assorbita che riflessa. L’energia si muove in più direzioni ma è comunque percepibile il punto di origine della fonte di generazione dell’evento sonoro.
 \end{itemize}
+
 \subsection{Risposta all'impulso}
+
 Al giorno d’oggi conosciamo una tecnica in grado di eseguire una fotografia delle caratteristiche acustiche in grado di descrivere come il suono si propaga da un punto di emissione ad un ricevitore.
 
-Parliamo di \textit{Risposta all’impulso} ovvero del modello fisico-matematico di un sistema lineare, non dipendente dal tempo, composto solo da un input ed un output (A.Farina - ROOM IMPULSE RESPONSES AS TEMPORAL AND SPATIAL FILTERS - 2006).
+Parliamo di \textit{Risposta all’impulso} ovvero del modello fisico-matematico di un sistema lineare, non dipendente dal tempo, composto solo da un input ed un output\footcite{af:book}.
 
 Le informazioni contenute sono sia relative al dominio del tempo, ad esempio riflessioni e ritardi nella propagazione che, relative al dominio della frequenza, comportando quindi modifiche dal punto di vista spettrale.
 
@@ -225,7 +233,9 @@ Il segnale riverberato conterrà al suo interno componenti spettrale non present
 Attraverso un processo di convoluzione, ampiamente spiegato e perfezionato dal prof. A Farina, siamo in grado di restituire la risposta all'impulso del sistema lineare.
 
 È da tenere conto che però una singola registrazione non è in grado di descrivere tutto lo spazio. La risposta all’impulso, come già detto, è relativa soltanto al punto in cui è posizionato il ricevitore e soltanto per il punto da cui è emesso il suono. Per la mappatura dello spazio per restituire un'immagine fedele dello spazio sono necessarie numerose registrazioni. Come per una fotografia, maggiore è il numero di “pixel”, più definita sarà l’immagine. Per questo è un lavoro che, soprattutto per luoghi ampi, richiede moltissimo tempo e spesso si tende ad effettuare un numero di registrazioni non necessario a restituire un modello fedele.
+
 \subsection{Storia dello studio degli spazi}
+
 Storicamente, in ambito musicale, lo spazio è stato sempre presente ed essenziale durante le performance. Basti pensare agli auditorium greci, dove la conformazione permette sia un rinforzo in termini di ampiezza, ma anche una forte intelligibilità delle parole in modo tale da raggiungere chiaramente tutti i presenti.
 Gli ascoltatori, posti ad un'angolazione di circa 120 gradi, ricevevano il suono diretto dall’oratore, seguito delle riflessioni provenienti sia dal pavimento dell’orchestra, che dal retro del palco, anche se con minor intensità.
 \begin{figure}[h]
