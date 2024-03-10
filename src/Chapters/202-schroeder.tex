@@ -1,9 +1,9 @@
 \section{Schroeder}
 
-Con l’obiettivo di ricreare passo dopo passo le unità descritte nell’articolo
+Con l’obiettivo di ricreare, passo dopo passo, le unità descritte nell’articolo
 \emph{Natural Sounding Artificial Reverberation}\footcite{ms:rev62}, le prime
 implementazioni in \faust~sono relative ai due blocchi essenziali, \emph{Comb}
-e \emph{All-Pass}.
+e \emph{All-Pass}, e alle interazioni tra loro.
 
 \subsection{Comb}
 
@@ -13,13 +13,19 @@ risposta all'impulso indicata da Schroeder e riportata in fig. \ref{fig:dflir}.
 
 \lstinputlisting{Code/dflc.dsp}
 
+\todo{sarebbe opportuno indicare le motivazioni della correzione del filtro}
+
 Il l'algoritmo utilizza le variabili $t$ (unità di tempo di ritardo espressa in
 campioni) e $g$ (coefficiente di riscalamento del segnale in feedback).
 
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.80\textwidth]{Code/dflc-svg/process.pdf}
-\caption{delay feedback loop}
+\caption{\emph{Delay Feedback Loop} con correzioni per l'implementazione
+         digitale \emph{samplerate}: il modulo \emph{delay} opera un ritardo
+         $t-1$ quindi con $t=1$ il ritardo accumulato internamente al ciclo di
+         \emph{feedback} è $0$, il campione di ritardo per $x$ è recuperato dopo
+         il ciclo di \emph{feedback}.}
 \label{fig:dflfaust}
 \end{figure}
 
@@ -31,8 +37,9 @@ dall'autore con figura \ref{fig:apf}
 
 \lstinputlisting{Code/msapf.dsp}
 
-Il comportamento All Pass è dato dalla somma del segnale ritardato scalato di
-$(1-g^2)$ e il segnale diretto per $-g$, scalato con inversione di polarità.
+Il comportamento \emph{All-Pass} è dato dalla somma del segnale ritardato
+scalato di $(1-g^2)$ e il segnale diretto per $-g$, scalato con inversione di
+polarità.
 
 \begin{figure}[htp]
 \centering
@@ -45,7 +52,7 @@ $(1-g^2)$ e il segnale diretto per $-g$, scalato con inversione di polarità.
 
 I filtri \emph{Comb} e \emph{All-Pass} implementati sono gli elementi basilari
 della riverberazione artificiale di \ms. Di seguito espongo le implementazioni
-articolate che l'autore espone dei filtri sopra descritti.
+articolate, dei filtri sopra descritti, che l'autore espone.
 
 \lstinputlisting{Code/msapfseq.dsp}
 
@@ -58,10 +65,11 @@ articolate che l'autore espone dei filtri sopra descritti.
 
 \subsection{Annidamento e controllo}
 
-\ms, immediatamente dopo la creazione degli elementi base, una serie di risultati
-sperimentali ottenuti nella ricerca della simulazione di alcuni dei comportamenti
-del riverbero acustico. Uno di questi è la possibilità di annidare un \emph{All-Pass}
-dentro un \emph{All-Pass} in modo che i due filtri combinati possano:
+\ms, immediatamente dopo la creazione degli elementi base, espone una serie di
+risultati sperimentali ottenuti nella ricerca della simulazione di alcuni dei
+comportamenti del riverbero acustico. Uno di questi è la possibilità di annidare
+un \emph{All-Pass} dentro un \emph{All-Pass} in modo che i due filtri combinati
+possano:
 \begin{enumerate}
   \item bilanciare il rapporto tra segnale diretto e segnale riverberato
   \item l'introduzione di un ritardo tra i due segnali (diretto e riverberato)
@@ -86,49 +94,35 @@ dentro un \emph{All-Pass} in modo che i due filtri combinati possano:
 
 \subsection{Algoritmi Combinati}
 
-Come già visto nel Capitolo 3, queste unità riverberanti non risultano particolaremente efficenti dal punto di vista della densità, se prese singolarmente, quindi il prossimo passo, come suggerito da Schroeder, è quello di crare delle reti di riverberatori combinando queste unità fondamentali.
+Come già visto nel Capitolo 3, \todo{rifare puntatore al paragrafo corretto}
+queste unità riverberanti, prese singolarmente, non risultano particolaremente
+efficaci dal punto di vista della densità. Il passo successivo è quindi quello
+di crare delle reti di riverberatori combinando queste unità fondamentali.
 
-\bigskip
-
-Le due tipologie proposte consistono in una serie di All Pass connessi (figura \ref{fig:apfseq}), per la prima e, una serie di Comb connessi in cascata seguiti da 2 All Pass in serie, per la seconda.
-Durante questa fase sono stati utilizzati numeri primi come valori dei ritardi in modo da evitare errori dovuti al campionamento.
-
-L'algoritmo per la configurazione in serie risulta essere
-
-\begin{code}
-apfseq =  seq(i, 5, apf(ba.take(i+1, primet10),.7));
-\end{code}
-
-La lista ''primet10'' è stata caricata con i valori dei vari t. Come suggerito dall'autore, si è cercato di utilizzare numeri primi che mantenessero una relazione di $1/3$ l'uno dall'altro.
-Il diagramma risultante è in figura \ref{fig:apfseqfaust}.
+\lstinputlisting{Code/mscombapf.dsp}
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=%
-0.90\textwidth]{apfseqfaust}
-\caption{Sequenza di All Pass}
-\label{fig:apfseqfaust}
+\includegraphics[width=1\textwidth]{Code/mscombapf-svg/process.pdf}
+\caption{Modello di riverberatore complesso di Schroeder: Filtri Comb in parallelo
+         in filtri All-Pass in serie}
+\label{fig:mscombapf}
 \end{figure}
 
-Il secondo algoritmo, per la configurazione `'Comb-All Pass'' vista in figura \ref{fig:comballpass}, è descritto nel seguente algoritmo
+Quest'algoritmo risulta essere il più efficace ad ora e permette la
+riproduzione di oltre $1000$ echi al secondo, un buon risultato considerando
+le stime effettute da Schroeder, ma che non corrisponde ad una riverberazione
+realistica e gradevole.
 
-\begin{code}
-reva((t,g,t1,g1),g2) = _<:_+(
-    par(i,6, dflda(ba.take(i+1, t),G*ba.take(i+1,g))) :>
-    seq(i, 2, apfn(ba.take(4-i, t1),G*ba.take(i+1,g1))))*(g2);
-process = _ : reva((primetc1,combg1,primetc2,combg2),G);
-\end{code}
+\lstinputlisting{Code/msapfcomb.dsp}
 
-`'par'' e `'rev'' sono rispettivamente, composizione parallela e composizione sequenziale e ci permettono di creare una cascata di 6 Comb seguita da una sequenza di 2 All Pass.
-
-Il risultato è in figura \ref{fig:comballpassfaust}.
+\todo[inline]{dovresti scrivere che il capovolgimento del flusso di elaborazione del
+segnale non produce comportamenti differenti ed il riverbero calcolato è identico.
+il sistema capovolto permette però la generazione di un segnale polifonico}
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=%
-1.2\textwidth]{comballpassfaust}
-\caption{Algoritmo Comb-All Pass}
-\label{fig:comballpassfaust}
+\includegraphics[width=1\textwidth]{Code/msapfcomb-svg/process.pdf}
+\caption{Modello capovolto}
+\label{fig:msapfcomb}
 \end{figure}
-
-Quest'algoritmo risulta essere il più efficente ad ora e permette la riproduzione di oltre 1000 echi al secondo, un buon risultato considerando le stime effettute da Schroeder, ma che non corrisponde ad una riverberazione realistica e gradevole.
