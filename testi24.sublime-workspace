@@ -1,0 +1,647 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"small",
+				"\\smallskip                                        "
+			],
+			[
+				"begin",
+				"\\begin{equation}                                  "
+			],
+			[
+				"itemize",
+				"\\begin{itemize}                                   "
+			],
+			[
+				"subse",
+				"\\subsection{title}                                "
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/tesi.tex",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "src/Chapters/101-sabine.tex",
+			"settings":
+			{
+				"buffer_size": 10983,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AgAAANsHAAAAAAAA3AcAAAAAAAAAAAAA3AcAAAAAAADcBwAAAAAAAGEAAAAsIGFuY2hlIGRpIGRpdmVyc2EgbmF0dXJhLCBjb21lIHBlciBlc2VtcGlvIGxhIHNjZWx0YSBkZWwKY3Jvbm9ncmFmbyAoMTg4NSkgcGVyIG1pc3VyYXJlIGlsIHRlbXBv",
+					"AQAAAAAAAAABAAAA2wcAAAAAAAA8CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					3,
+					"left_delete",
+					null,
+					"AwAAAKQIAAAAAAAApAgAAAAAAAD7AAAAU29ubyBwcm9wcmlvIHF1ZXN0ZSBwYXJvbGUgYSByaXZlbGFyZSBjaGUgbm9uIHBvdGV2YSBlc3NlcmVjaSB1biBtb21lbnRvIGRpdmVyc28KbmVsbGEgc3RvcmlhIGRlbGwndW9tbyBpbiBjdWkgbGEgY29udmVyZ2VuemEgZGkgZXNpZ2VuemUgZSBwb3NzaWJpbGl0w6AgdGVjbmljaGUKYXZyZWJiZSBwb3J0YXRvIGFsbGEgc29sdXppb25lIGRpIHByb2JsZW1hdGljaGUgaXJyaXNvbHRlIChvIG5vbiBjb25zaWRlcmF0ZSkKcGVyIHNlY29saS6jCAAAAAAAAKMIAAAAAAAAAQAAAAqiCAAAAAAAAKIIAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAngkAAAAAAACkCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					3,
+					"left_delete",
+					null,
+					"AwAAAN4HAAAAAAAA3gcAAAAAAADEAAAAXGJlZ2lue3F1b3RlfQogIFxsZG90cyBwZXJmZWN0IG5vaXNlbGVzc25lc3MsIHBvcnRhYmlsaXR5LCBhbmQgY2FwYWNpdHkgdG8gbWVhc3VyZSBpbnRlcnZhbHMKICBvZiB0aW1lIGZyb20gYSBoYWxmIG9mIHNlY29uZCB0byB0ZW4gc2Vjb25kcyB3aXRoIGNvbnNpZGVyYWJsZSBhY2N1cmFjeVxmb290Y2l0ZXt3czpyZXZ9LgpcZW5ke3F1b3Rlfd0HAAAAAAAA3QcAAAAAAAABAAAACtwHAAAAAAAA3AcAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAoggAAAAAAADeBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"BwAAAJEkAAAAAAAAkyQAAAAAAAAAAAAAZiQAAAAAAABoJAAAAAAAAAAAAAA4JAAAAAAAADokAAAAAAAAAAAAABQkAAAAAAAAFiQAAAAAAAAAAAAAACQAAAAAAAACJAAAAAAAAAAAAACuIwAAAAAAALAjAAAAAAAAAAAAABMjAAAAAAAAFSMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEyMAAAAAAACiJAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAAB0lAAAAAAAAHiUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHSUAAAAAAAAdJQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"cut",
+					null,
+					"AQAAAFEdAAAAAAAAUR0AAAAAAADuAgAAXHN1YnNlY3Rpb257RWNoaSBkaSBTYWJpbmV9CgpDaSBzb25vIGlubnVtZXJldm9saSBzcHVudGkgZGkgcmlmbGVzc2lvbmUgdHJhIGxlIHBhZ2luZSBkZWkgdGVzdGkgZGkgXHdzXGZvb3RjaXRle3dzOnJldn0sCmRhaSBxdWFsaSwgYWdsaSBzY29waSBkaSB1bmEgY29ycmV0dGEgaW1wbGVtZW50YXppb25lIGRpZ2l0YWxlIGRlbCByaXZlcmJlcm8gZQpzb3ByYXR0dXR0byBhZ2xpIHNjb3BpIGRpIHVuIGNvcnJldHRvIHV0aWxpenpvIG11c2ljYWxlLCBwb3NzaWFtbyByaWNhdmFyZToKClxiZWdpbntjb21wYWN0aXRlbX0KICBcaXRlbSBMYSBkdXJhdGEgZGVsIHN1b25vIHJlc2lkdW8gYXNjb2x0YWJpbGUgaW4gdW4gYW1iaWVudGUgw6ggYXBwcm9zc2ltYXRpdmFtZW50ZQogIHVndWFsZSBpbiBvZ25pIHB1bnRvIGRlbGxvIHNwYXppby4KICBcaXRlbSBMYSBkdXJhdGEgZGVsIHN1b25vIHJlc2lkdW8gYXNjb2x0YWJpbGUgaW4gdW4gYW1iaWVudGUgw6ggYXBwcm9zc2ltYXRpdmFtZW50ZQogIGluZGlwZW5kZW50ZSBkYWxsYSBwb3NpemlvbmUgZGVsbGEgc29yZ2VudGUuClxlbmR7Y29tcGFjdGl0ZW19CgpTb25vIHF1ZXN0aSBkdWUgcHJlc3VwcG9zdGkgZm9uZGFtZW50YWxpLCBzdWkgcXVhbGkgY2VyY2hlcmVtbyBkaSBjb3N0cnVpcmUgdW4KcGVuc2llcm8gbXVzaWNhbGUgcHJpbWEgYW5jb3JhIGNoZSB1bm8gc3RydW1lbnRvIG11c2ljYWxlLCBxdWFsZSBpbCByaXZlcmJlcm8KZGlnaXRhbGUgcHXDsiBlc3NlcmUu",
+					"AQAAAAAAAAABAAAAUR0AAAAAAAA8IAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					2,
+					"left_delete",
+					null,
+					"AgAAAFAdAAAAAAAAUB0AAAAAAAABAAAACk8dAAAAAAAATx0AAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAUR0AAAAAAABRHQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAEInAAAAAAAAQycAAAAAAAAAAAAAQycAAAAAAABEJwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQicAAAAAAABCJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"paste",
+					null,
+					"AQAAAEMnAAAAAAAALioAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQycAAAAAAABDJwAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					41,
+					1,
+					"left_delete",
+					null,
+					"AQAAAC4qAAAAAAAALioAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALyoAAAAAAAAvKgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJEqAAAAAAAAkSoAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAkioAAAAAAACSKgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAJEqAAAAAAAAkioAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkSoAAAAAAACRKgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"cut",
+					null,
+					"AQAAAC8qAAAAAAAALyoAAAAAAACwAAAATOKAmWFydGljb2xvIMOoIGNvbnNpZGVyYXRvIHVuIGNhcG9sYXZvcm8gZGkgYWN1c3RpY2EgYXBwbGljYXRhIGUgaGEgYXZ1dG8gdW5hIGdyYW5kZSBpbmZsdWVuemEgc3VsbG8Kc3ZpbHVwcG8gZGVsbGEgc2NpZW56YSBkZWwgc3Vvbm8gZSBzdWxsYSBwcm9nZXR0YXppb25lIGRlZ2xpIHNwYXppIHNvbm9yaS4",
+					"AQAAAAAAAAABAAAA3CoAAAAAAAAvKgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"paste",
+					null,
+					"AQAAAEInAAAAAAAA7ycAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQicAAAAAAABCJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAEEnAAAAAAAAQicAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQScAAAAAAABBJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					62,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABQmAAAAAAAAFSYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFCYAAAAAAAAUJgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAG0mAAAAAAAAbiYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbSYAAAAAAABtJgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					72,
+					1,
+					"left_delete",
+					null,
+					"AQAAAG4mAAAAAAAAbiYAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAbyYAAAAAAABvJgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAMgmAAAAAAAAySYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyCYAAAAAAADIJgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACgnAAAAAAAAKScAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKCcAAAAAAAAoJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAPMnAAAAAAAA9CcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8ycAAAAAAADzJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACIiAAAAAAAAIyIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIiIAAAAAAAAiIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAANwiAAAAAAAA3SIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3CIAAAAAAADcIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAKcjAAAAAAAAqCMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApyMAAAAAAACnIwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAYkAAAAAAAAByQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABiQAAAAAAAAGJAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAGkkAAAAAAAAaiQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaSQAAAAAAABpJAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package Control",
+				"Install Package Control"
+			],
+			[
+				"Snippet: ",
+				"Snippet: For Loop"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 131.199996948,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters"
+	],
+	"file_history":
+	[
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/101-sabine.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/100-storia.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/storia.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/Introduzione.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Bibliography.bib",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/Chapters/Cap1r.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/arsclassica-settings.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/FrontBackMatter/Titlepage.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/_custom-settings.tex",
+		"/C/Users/Sergio/Documents/GitHub/AMATO-TILL24/src/FrontBackMatter/Titleback.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Introduzione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Titlepage.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap4.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap3.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Cap2.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Titleback.tex",
+		"/C/Users/Sergio/Desktop/Tesi/tesi-latex-template-main/tesi-latex-template-main/src/tesi.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Code.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Bibliography.tex",
+		"/C/Users/Sergio/Desktop/Nuova cartella/Amato-TILE24/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Desktop/Amato-TILE24-main/src/Chapters/Cap1.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-main/src/_custom-settings.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/Chapters/Fundamentals.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/Chapters/Code.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-main/src/tesi.tex",
+		"/C/Users/Sergio/Downloads/tesi-latex-template-0.1/tesi-latex-template-0.1/src/tesi.tex",
+		"/C/Users/Sergio/Desktop/test.cpp",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Conclusione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/FrontBackMatter/Acknowledgements.tex",
+		"/C/Users/Sergio/Desktop/Cap1.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Conclusione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Introduzione.tex",
+		"/C/Users/Sergio/Documents/GitHub/Amato-TILE24/src/Chapters/Fundamentals.tex",
+		"/C/Users/Sergio/AppData/Local/Temp/Rar$DIa21396.42056/ORTF.tex",
+		"/C/Users/Sergio/Desktop/aaa.tex",
+		"/C/Users/Sergio/Desktop/aaa.log",
+		"/C/Users/Sergio/AppData/Local/Programs/MiKTeX/tex/latex/classicthesis/classicthesis.sty",
+		"/C/Users/Sergio/AppData/Roaming/Sublime Text/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Sergio/AppData/Roaming/Sublime Text/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Sergio/Documents/new.cpp",
+		"/C/Users/Sergio/Downloads/Telegram Desktop/The Binding of Isaac Rebirth Repentance/resources/packed/graphics.a",
+		"/C/Users/Sergio/Desktop/Pokemon Theta Emerald Renev v2.3/Pokemon Theta Emerald RENEV.docx",
+		"/C/Users/Sergio/Desktop/AME/AME/20180605 Analisi/20220516 Analizzare un brano.docx",
+		"/C/Users/Sergio/Downloads/Pokemon Theta Emerald Renev v2.3/Pokemon Theta Emerald RENEV.docx"
+	],
+	"find":
+	{
+		"height": 55.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 135.600006104,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/tesi.tex",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Chapters/101-sabine.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9322,
+								9322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.4
+	},
+	"input":
+	{
+		"height": 50.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 274.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 81.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "testi24.sublime-project",
+	"replace":
+	{
+		"height": 49.6
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
