@@ -1,0 +1,26 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../tesi.tex
+
+%************************************************
+\chapter{Implementazione}
+\label{chp:Implementazione}
+%************************************************
+
+L'implementazione di un riverbero artificiale non può che ripartire dale teorie
+di \ms descritte in \ref{sec:schroeder1} che, oltre ad essere la prima
+implementazione storica, costituisce l'unico momento di progettazione in cui
+il rapporto hardware e software presenta problematiche uniche e fondamentali per
+lo sviluppo del pensiero informatico.
+
+Gli algoritmi sono stati scritti nel linguaggio \faust.
+
+Sulle implementazioni dirette delle ricerche di \ms e \jam ho inserito il codice
+necessario a controllare i parametri atmosferici quali temperatura, pressione e
+tipologia del gas.
+
+\clearpage
+\input{Chapters/201-filtri.tex}
+\clearpage
+\input{Chapters/202-schroeder.tex}
+\clearpage
+\input{Chapters/203-moorer.tex}
