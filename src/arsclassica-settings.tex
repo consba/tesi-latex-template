@@ -54,7 +54,46 @@
 
 \usepackage{ccicons}
 
-\usepackage{todonotes}
+\usepackage{xargs}
+\usepackage[pdftex,dvipsnames]{xcolor}
+\usepackage[
+  colorinlistoftodos,
+  prependcaption,
+  %textsize=tiny
+]{todonotes}
+
+\newcommandx{\suggerimento}[2][1=]{%
+  \bigskip
+  \begin{minipage}{\linewidth}
+    \todo[inline,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}
+  \end{minipage}
+  }
+
+\newcommandx{\citazione}[2][1=]{%
+  \bigskip
+  \begin{minipage}{\linewidth}
+    \todo[inline,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}
+  \end{minipage}
+  }
+
+\newcommandx{\domanda}[2][1=]{%
+  \bigskip
+  \begin{minipage}{\linewidth}
+    \todo[inline,linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}
+  \end{minipage}
+  }
+  
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+\usepackage{setspace}
+
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------ GS ---
+%-------------------------------------------------------------- suggerimento ---
+%-------------------------------------------------------------------------------
+%\suggerimento[caption={GS}]{%
+%}
+
 \usepackage{setspace}
 % Using \doublespacing in the preamble 
 % changes text to double line spacing
