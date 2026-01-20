@@ -1,20 +1,31 @@
-TEX = latex
+TEX = pdflatex
 BIB = biber
 
-src = tesi.tex
-bcf = tesi
-
+SRC = tesi.tex
+BCF = tesi
 PDF = tesi.pdf
 
-publish :
-	$(TEX) $(src) && $(BIB) $(bcf) && $(TEX) $(src) && $(TEX) $(src) && rm *.aux *.log *.toc *.run.xml *.bbl *.blg *.bcf *.fdb_latexmk *.fls *.idx *.ilg *.ind *.lof *.lot *.out
+.PHONY: all build publish step clean distclean
 
-build :
-	$(TEX) $(src) && $(BIB) $(bcf) && $(TEX) $(src) && $(TEX) $(src)
+all: build
 
-step :
-	$(TEX) $(src)
+build:
+	$(TEX) -interaction=nonstopmode $(SRC) || true
+	$(BIB) $(BCF) || true
+	$(TEX) -interaction=nonstopmode $(SRC) || true
+	$(TEX) -interaction=nonstopmode $(SRC)
 
-.PHONY: clean
-clean :
-	rm *.aux *.log *.toc *.run.xml *.bbl *.blg *.bcf *.fdb_latexmk *.fls *.idx *.ilg *.ind *.lof *.lot *.pdf *.out
+publish: build clean
+
+step:
+	$(TEX) -interaction=nonstopmode $(SRC)
+
+clean:
+	@rm -f *.aux *.log *.toc *.run.xml *.bbl *.blg *.bcf \
+		*.fdb_latexmk *.fls *.idx *.ilg *.ind *.lof *.lot *.out \
+		*.synctex.gz *~ *.backup
+	@echo "File temporanei rimossi."
+
+distclean: clean
+	@rm -f $(PDF)
+	@echo "PDF rimosso."
